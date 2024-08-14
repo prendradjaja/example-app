@@ -1,0 +1,9 @@
+<span>Message:</span>
+<script>
+async function main() {
+  const obj = await fetch('./same-repo.json').then(res => res.json());
+  document.querySelector('span').innerText = 'Message: ' + obj.message;
+}
+
+main();
+</script>
